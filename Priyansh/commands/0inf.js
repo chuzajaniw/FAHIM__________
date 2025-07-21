@@ -1,13 +1,13 @@
 module.exports.config = {
-	name: "info",
-	version: "1.0.1", 
-	hasPermssion: 0,
-	credits: "RDX ZAIN",
-	description: "Admin and Bot info.",
-	commandCategory: "...",
-	cooldowns: 1,
-	dependencies: 
-	{
+        name: "inf",
+        version: "1.0.1", 
+        hasPermssion: 0,
+        credits: "Arun Kumar", //don't change the credits please
+        description: "Admin and Bot info.",
+        commandCategory: "info",
+        cooldowns: 1,
+        dependencies: 
+        {
     "request":"",
     "fs-extra":"",
     "axios":""
@@ -18,53 +18,36 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-		hours = Math.floor(time / (60 * 60)),
-		minutes = Math.floor((time % (60 * 60)) / 60),
-		seconds = Math.floor(time % 60);
+                hours = Math.floor(time / (60 * 60)),
+                minutes = Math.floor((time % (60 * 60)) / 60),
+                seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
+var juswa = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
-["https://i.imgur.com/Kj2CmiZ.jpegv" , "https://i.imgur.com/yiNOiVU.jpeg","https://i.postimg.cc/Sx7Yk5D0/ef81664323554dd5c8f17f0826e26e5e.jpg","https://i.postimg.cc/DwqYrqPQ/b123e2cb78bcb4fa5dcb53dfdeed2611.jpg"];
-var callback = () => api.sendMessage({body:`╭━☆━╮
-🇵🇰 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🇵🇰
-╰━☆━╯
+["https://i.imgur.com/brZF9WU.jpeg", "https://i.imgur.com/Xx0pRP1.jpeg", "https://i.imgur.com/k8AhY1C.jpeg", "https://i.imgur.com/J53QBu4.jpeg",
+"https://i.imgur.com/XbbhwUz.jpeg",
+"https://i.imgur.com/JLlKYSw.jpeg"];
+var callback = () => api.sendMessage({body:`🌹𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙱𝙾𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 💥💞 
 
-🤖☾︎𝗕𝗢𝗧 𝗡𝗔𝗠𝗘☽︎🤖 ${global.config.BOTNAME}
-══════════════════
 
-🔥𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡 シ︎🔥☞︎︎︎☜︎︎︎✰ ℤ𝔸̃𝕀̨ℕ̃ ℙℝ𝕀̨ℕ̃ℂ̧𝔼́💔🥀
-══════════════════
+☄️𝗕𝗢𝗧 𝗡𝗔𝗠𝗘☄️ ⚔ ${global.config.BOTNAME} ⚔
 
-🫰♕︎B̸O̸T̸ A̸D̸M̸I̸N̸ F̸A̸C̸E̸B̸O̸O̸K̸ A̸C̸C̸O̸U̸N̸T̸ L̸I̸N̸K̸ ♕︎🫰https://www.facebook.com/profile.php?id=61566479789589💞🕊️
-══════════════════
+🔥𝗢𝗪𝗡𝗘𝗥 🔥☞︎︎︎ 𝙁𝘼𝙃𝙄𝙈 ⚡ \n\n
+🙈🄾🅆🄽🄴🅁 🄲🄾🄽🅃🄰🄲🅃 🄻🄸🄽🄺🅂🙈➪ \n\n  𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 🧨https://www.facebook.com/hackar.vaiya 💞🕊️
+  \n 
+✅𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘👉 @𝙁𝘼𝙃𝙄𝙈 ⚡💥 \n\n  ====𝗧𝗼 𝗹𝗲𝗮𝗿𝗻 𝗛𝗼𝘄 𝘁𝗼 𝗖𝗿𝗲𝗮𝘁𝗲 𝗔 𝗯𝗼𝘁 === 𝗩𝗶𝘀𝗶𝘁 𝗔𝗻𝗱 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 𝗠𝘆 𝗖𝗵𝗮𝗻𝗻𝗲𝗹✅ 🗡 https://www.youtube.com/@𝙁𝘼𝙃𝙄𝙈 ⚡💥
+✧══════•❁❀❁•══════✧
 
-👋For Any Kind Of Help Contact On Telegram  Username 👉@Zainijutt7 😇
-══════════════════
-♥︎═════•❁❀❁•═════♥︎
+🌸𝗕𝗼𝘁 𝗣𝗿𝗲𝗳𝗶𝘅🌸☞︎︎︎☜︎︎︎✰ ${global.config.PREFIX}
 
-🌸𝔹𝕆𝕋 ℙℝ𝔼𝔽𝕀𝕏 🌸☞︎︎︎.☜︎︎︎✰ ${global.config.PREFIX}
+🥳UPTIME🥳
 
-♥️𝔹𝕆𝕋 𝕆𝕎ℕ𝔼ℝ♥️ ☞︎︎︎ᘔᗩIᑎ ᒍᑌTT☜︎︎︎✰ 
-❤︎═════•❁❀❁•═════❤︎
+🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ ${juswa} 
 
-☞︎︎︎𝚄𝙿 𝚃𝙸𝙼𝙴 ☘︎⏳☘︎☜︎︎︎
+⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
 
-🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ 
-╔═════════╗
-${juswa} 
-╚═════════╝
-⚡𝘽𝙊𝙏 𝙄𝙎 𝙍𝙐𝙉𝙄𝙉𝙄𝙂⚡ 
-╭──🌟━━━━━━━━━━━━━━━━━🌟──╮
-${hours}:${minutes}:${seconds}.
-╰──🌟━━━━━━━━━━━━━━━━━🌟──╯
-✅Thanks for using ${global.config.BOTNAME} Bot🖤
-
-🎀💞•••𝗛𝗲𝗿𝗲 𝗜𝘀 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲•••💖🌷
-╔═══❖•ೋ° °ೋ•❖═══╗
-✨❤️‍🔥 𝒁𝑨𝑰𝑵 𝑱𝑼𝑻𝑻 ❤️‍🔥✨
-╚═══❖•ೋ° °ೋ•❖═══╝
-
+✅Thanks for using My Bot ❤ ${global.config.BOTNAME} 🖤
 
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/juswa.jpg")).on("close",() => callback());
    };
